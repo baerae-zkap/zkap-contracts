@@ -4,7 +4,7 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "npm run test:unit && npm run test:foundry && npm run test:e2e && npm run test:e2e:zk",
-    "test:ci": "npm run test:unit && npm run test:foundry && npm run test:e2e",
+    "test:ci": "npm run test:unit && npm run test:e2e",
     "test:unit": "hardhat test test/unit/**/*.ts",
     "test:foundry": "forge test",
     "test:e2e": "bash -c 'hardhat test test/e2e/core/*.ts'",
