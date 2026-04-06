@@ -51,11 +51,11 @@ For local development and unit tests, the default values in `.env.example` are s
 ## Development Workflow
 
 1. Fork the repository
-2. Create a feature branch from `develop`: `git checkout -b feat/your-feature develop`
+2. Create a feature branch from `main`: `git checkout -b feat/your-feature main`
 3. Make your changes
 4. Ensure all tests pass: `npm run test:ci`
 5. Ensure linting passes: `npm run lint:sol`
-6. Submit a pull request to `develop`
+6. Submit a pull request to `main`
 
 ## Pull Request Guidelines
 
@@ -68,7 +68,6 @@ For local development and unit tests, the default values in `.env.example` are s
 ## Branch Conventions
 
 - `main` — stable releases
-- `develop` — active development
 
 ## Solidity Style
 
