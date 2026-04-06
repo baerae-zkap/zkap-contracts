@@ -1,0 +1,5 @@
+# Default: all PRs require review from core team
+* @kaikookim @dkHan54 @baerae-colin
+
+# Contract changes require review from all code owners
+contracts/ @kaikookim @dkHan54 @baerae-colin
