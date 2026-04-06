@@ -1,0 +1,12 @@
+{
+  "remappings": [
+    "@openzeppelin/=node_modules/@openzeppelin/",
+    "@account-abstraction/=node_modules/@account-abstraction/",
+    "solady/=node_modules/solady/",
+    "hardhat/=node_modules/hardhat/"
+  ],
+  "optimizer": {
+    "enabled": true,
+    "runs": 1000000
+  }
+}

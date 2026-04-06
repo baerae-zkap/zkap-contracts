@@ -1,0 +1,18 @@
+# Auto-generated files (from zkup CLI)
+contracts/Utils/Groth16Verifier.sol
+contracts/Utils/PoseidonHash.sol
+
+# External utility libraries
+contracts/Utils/RetrieveX.sol
+contracts/Utils/StringUtils.sol
+contracts/Utils/Bn128.sol
+contracts/Utils/Bn128G2.sol
+contracts/Utils/Groth16AltBN128.sol
+contracts/Utils/PolymathVerifyBn128.sol
+contracts/Utils/JsonUtils.sol
+
+# Experimental folder
+contracts/exp/
+
+# Node modules
+node_modules/

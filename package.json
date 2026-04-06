@@ -1,0 +1,46 @@
+{
+  "name": "zkap-contracts",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "npm run test:unit && npm run test:foundry && npm run test:e2e && npm run test:e2e:zk",
+    "test:ci": "npm run test:unit && npm run test:foundry && npm run test:e2e",
+    "test:unit": "hardhat test test/unit/**/*.ts",
+    "test:foundry": "forge test",
+    "test:e2e": "bash -c 'hardhat test test/e2e/core/*.ts'",
+    "test:e2e:zk": "bash -c 'source ./zk-config.sh && hardhat test test/e2e/zk/*.ts'",
+    "test:e2e:manual": "bash -c 'hardhat test test/e2e/manual/*.ts'",
+    "test:coverage": "hardhat coverage --solcoverjs .solcover.js --testfiles 'test/unit/**/*.ts'",
+    "lint": "npm run lint:sol",
+    "lint:sol": "solhint 'contracts/**/*.sol'",
+    "lint:sol:fix": "solhint 'contracts/**/*.sol' --fix"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "hardhat": "^2.24.3",
+    "jwt-decode": "^4.0.0",
+    "solhint": "^6.0.1",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typechain": "^8.3.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@account-abstraction/contracts": "^0.9.0-rc.1",
+"@levischuck/tiny-cbor": "^0.2.2",
+    "@openzeppelin/contracts": "^5.2.0",
+    "axios": "^1.6.0",
+    "base64url": "^3.0.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "ec-pem": "^0.18.0",
+    "express": "^5.1.0",
+    "googleapis": "^160.0.0",
+    "secp256r1": "^0.0.3",
+    "solady": "^0.1.24",
+    "viem": "^2.34.0"
+  }
+}

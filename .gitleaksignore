@@ -1,0 +1,10 @@
+# Hardhat default test account #0 (publicly known, zero real value)
+test/foundry/AccountKey.fuzz.t.sol:generic-api-key:17
+test/foundry/BaseTest.sol:generic-api-key:20
+test/foundry/ZkapAccount.multisig.fuzz.t.sol:generic-api-key:22
+test/foundry/ZkapAccount.multisig.fuzz.t.sol:generic-api-key:23
+test/foundry/ZkapAccount.multisig.fuzz.t.sol:generic-api-key:24
+test/foundry/ZkapPaymaster.extended.fuzz.t.sol:generic-api-key:26
+test/foundry/ZkapPaymaster.fuzz.t.sol:generic-api-key:21
+# Test-only RSA key for deterministic JWT generation (not a real credential)
+test/helpers/idTokenSimulator.ts:private-key:87
